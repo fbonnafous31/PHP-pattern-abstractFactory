@@ -2,14 +2,14 @@
 
     namespace Ingredient;
     
-    class SauceMarinara implements \Ingredient\Sauce {
+    class PateSoufflee implements \Ingredient\Pate {
 
         public function __construct() {
-            $this->sauce = 'sauce Marinara';           
+            $this->pate = 'pate soufflée alsacienne';
         }
 
         public function getDescription () {
-            return $this->sauce;
+            return $this->pate;
         }
 
     }

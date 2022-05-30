@@ -5,15 +5,15 @@
     class FabriqueIngredientsPizzaStrasbourg implements FabriqueIngredientsPizza {
        
         public function creerPate() {
-            return new PateFine('pate moelleuse style alsacien');
+            return new PateSoufflee();
         }
         
         public function creerSauce() {
-            return new SauceMarinara();
+            return new SauceTomatesCerise();
         }
 
         public function creerFromage(){
-            return new Reggiano();
+            return new FromageParmigianoReggiano();
         }
 
         public function creerLegumes() {

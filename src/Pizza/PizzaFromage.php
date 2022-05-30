@@ -16,7 +16,12 @@
             $pate    = $this->fabriqueIngredients->creerPate();
             $sauce   = $this->fabriqueIngredients->creerSauce();
             $fromage = $this->fabriqueIngredients->creerFromage();
-            echo "Préparation de pizza " . $this->nom . "à base d'une " . $pate->getDescription() . "<br>";
+            
+            echo "Préparation de pizza " . $this->nom . 
+                 " base " . $pate->getDescription() . 
+                 " avec  " . $sauce->getDescription() .
+                 ", " . $fromage->getDescription() . 
+                 "<br>";
             
         }
 

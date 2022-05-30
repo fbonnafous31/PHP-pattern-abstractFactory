@@ -2,12 +2,10 @@
 
     namespace Ingredient;
     
-    class PateFine {
+    class PateFine implements \Ingredient\Pate {
 
-        protected string $pate = 'Pate fine style Brest';
-
-        public function __construct($pate) {
-            $this->pate = $pate;
+        public function __construct() {
+            $this->pate = 'Pate fine bretonne';
         }
 
         public function getDescription () {

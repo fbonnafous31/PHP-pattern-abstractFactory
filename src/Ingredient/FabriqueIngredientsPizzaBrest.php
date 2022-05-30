@@ -5,7 +5,7 @@
     class FabriqueIngredientsPizzaBrest implements FabriqueIngredientsPizza {
        
         public function creerPate() {
-            return new PateFine('pate fine style Brest');
+            return new PateFine();
         }
         
         public function creerSauce() {
@@ -13,7 +13,7 @@
         }
 
         public function creerFromage(){
-            return new Reggiano();
+            return new FromageMozarella();
         }
 
         public function creerLegumes() {
